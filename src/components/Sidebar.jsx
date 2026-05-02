@@ -28,7 +28,7 @@ export default function Sidebar() {
           </p>
         </NavLink>
 
-        <NavLink to="/" className="flex items-center mt-5 ml-7.5 w-30 bg-amber-950 p-1.5 rounded font-[satoshi]">
+        <NavLink to="/" className="flex items-center mt-5 ml-7.5 w-30 bg-[#F5C710] p-1.5 rounded font-[satoshi]">
           <img src={drlogo} alt="" className="h-5.5" />
           <p className="text-[14px] ml-1 font-bold">
             Drivers
