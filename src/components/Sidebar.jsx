@@ -22,13 +22,13 @@ export default function Sidebar() {
 
       <nav>
         <NavLink to="" className="flex items-center mt-10 ml-8">
-          <img src={dashlogo} alt="" className="h-5" />
+          <img src={dashlogo} alt="" className="w-4.5 h-5" />
           <p className=" text-white text-[14px] ml-2 font-medium font-[satoshi]">
             Dashboard
           </p>
         </NavLink>
 
-        <NavLink to="/" className="flex items-center mt-5 ml-7.5 w-30 bg-[#F5C710] p-1.5 rounded font-[satoshi]">
+        <NavLink to="/" className="flex items-center mt-5 ml-7.5 w-30 bg-amber-950 p-1.5 rounded font-[satoshi]">
           <img src={drlogo} alt="" className="h-5.5" />
           <p className="text-[14px] ml-1 font-bold">
             Drivers
