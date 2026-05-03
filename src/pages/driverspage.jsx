@@ -5,7 +5,7 @@ import dot from "../Images/Vector.svg";
 import filter from "../Images/filter.svg";
 import sarrow from "../Images/Icon.svg";
 import ellipse from "../Images/Ellipse.svg";
-import star from "../Images/Star.png";
+import star from "../Images/Star.svg";
 import point from "../Images/Dot.svg";
 import option from "../Images/if.png";
 import point2 from "../Images/point.svg";
@@ -129,7 +129,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="bg-[#FCFCFD] text-[9px] h-8 flex items-center ml-4 text-[#667085] font-medium">
+        <div className="bg-[#FCFCFD] text-[9px] h-9 flex items-center ml-4 text-[#667085] font-medium">
           <p className="mr-12 font-[Inter]">Driver ID</p>
           <p className="mr-11 font-[Inter]">Image</p>
 
@@ -181,7 +181,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-8 flex items-center ml-3 text-[10px]">
+        <div className="h-9 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -211,8 +211,10 @@ export default function drivers() {
           </div>
 
           <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-1">4.5</p>
-            <img src={star} alt="" className="w-2.5 h-2.5" />
+            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+            <div className=" mb-0.75 flex items-center">
+            <img src={star} alt="" className="2.5 h-2.5" />
+            </div>
           </div>
 
           <div className="mr-17">
@@ -235,7 +237,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-8 flex items-center ml-3 text-[10px]">
+        <div className="h-9 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -264,9 +266,11 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-1">4.5</p>
-            <img src={star} alt="" className="w-2.5 h-2.5" />
+         <div className="flex items-center mr-11">
+            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+            <div className=" mb-0.75 flex items-center">
+            <img src={star} alt="" className="2.5 h-2.5" />
+            </div>
           </div>
 
           <div className="mr-17">
@@ -289,7 +293,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-8 flex items-center ml-3 text-[10px]">
+        <div className="h-9 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -319,8 +323,10 @@ export default function drivers() {
           </div>
 
           <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-1">4.5</p>
-            <img src={star} alt="" className="w-2.5 h-2.5" />
+            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+            <div className=" mb-0.75 flex items-center">
+            <img src={star} alt="" className="2.5 h-2.5" />
+            </div>
           </div>
 
           <div className="mr-17">
@@ -343,7 +349,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-8 flex items-center ml-3 text-[10px]">
+        <div className="h-9 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -373,8 +379,10 @@ export default function drivers() {
           </div>
 
           <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-1">4.5</p>
-            <img src={star} alt="" className="w-2.5 h-2.5" />
+            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+            <div className=" mb-0.75 flex items-center">
+            <img src={star} alt="" className="2.5 h-2.5" />
+            </div>
           </div>
 
           <div className="mr-17">
@@ -397,7 +405,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-8 flex items-center ml-3 text-[10px]">
+        <div className="h-9 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -427,8 +435,10 @@ export default function drivers() {
           </div>
 
           <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-1">4.5</p>
-            <img src={star} alt="" className="w-2.5 h-2.5" />
+            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+            <div className=" mb-0.75 flex items-center">
+            <img src={star} alt="" className="2.5 h-2.5" />
+            </div>
           </div>
 
           <div className="mr-17">
@@ -451,7 +461,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-8 flex items-center ml-3 text-[10px]">
+        <div className="h-9 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -480,9 +490,11 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-1">4.5</p>
-            <img src={star} alt="" className="w-2.5 h-2.5" />
+         <div className="flex items-center mr-11">
+            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+            <div className=" mb-0.75 flex items-center">
+            <img src={star} alt="" className="2.5 h-2.5" />
+            </div>
           </div>
 
           <div className="mr-17">
@@ -505,7 +517,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-8 flex items-center ml-3 text-[10px]">
+        <div className="h-9 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -535,8 +547,10 @@ export default function drivers() {
           </div>
 
           <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-1">4.5</p>
-            <img src={star} alt="" className="w-2.5 h-2.5" />
+            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+            <div className=" mb-0.75 flex items-center">
+            <img src={star} alt="" className="2.5 h-2.5" />
+            </div>
           </div>
 
           <div className="mr-17">
@@ -559,7 +573,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-8 flex items-center ml-3 text-[10px]">
+        <div className="h-9 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -589,8 +603,10 @@ export default function drivers() {
           </div>
 
           <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-1">4.5</p>
-            <img src={star} alt="" className="w-2.5 h-2.5" />
+            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+            <div className=" mb-0.75 flex items-center">
+            <img src={star} alt="" className="2.5 h-2.5" />
+            </div>
           </div>
 
           <div className="mr-17">
@@ -613,7 +629,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-8 flex items-center ml-3 text-[10px]">
+        <div className="h-9 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -645,8 +661,10 @@ export default function drivers() {
           </div>
 
           <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-1">4.5</p>
-            <img src={star} alt="" className="w-2.5 h-2.5" />
+            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+            <div className=" mb-0.75 flex items-center">
+            <img src={star} alt="" className="2.5 h-2.5" />
+            </div>
           </div>
 
           <div className="mr-17">
@@ -669,7 +687,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-8 flex items-center ml-3 text-[10px]">
+        <div className="h-9 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -699,8 +717,10 @@ export default function drivers() {
           </div>
 
           <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-1">4.5</p>
-            <img src={star} alt="" className="w-2.5 h-2.5" />
+            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+            <div className=" mb-0.75 flex items-center">
+            <img src={star} alt="" className="2.5 h-2.5" />
+            </div>
           </div>
 
           <div className="mr-17">
@@ -723,7 +743,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-8 flex items-center ml-3 text-[10px]">
+        <div className="h-9 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -753,8 +773,10 @@ export default function drivers() {
           </div>
 
           <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-1">4.5</p>
-            <img src={star} alt="" className="w-2.5 h-2.5" />
+            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+            <div className=" mb-0.75 flex items-center">
+            <img src={star} alt="" className="2.5 h-2.5" />
+            </div>
           </div>
 
           <div className="mr-17">
@@ -777,7 +799,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-8 flex items-center ml-3 text-[10px]">
+        <div className="h-9 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -807,8 +829,10 @@ export default function drivers() {
           </div>
 
           <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-1">4.5</p>
-            <img src={star} alt="" className="w-2.5 h-2.5" />
+            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+            <div className=" mb-0.75 flex items-center">
+            <img src={star} alt="" className="2.5 h-2.5" />
+            </div>
           </div>
 
           <div className="mr-17">
@@ -831,7 +855,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-8 flex items-center ml-3 text-[10px]">
+        <div className="h-9 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -861,8 +885,10 @@ export default function drivers() {
           </div>
 
           <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-1">4.5</p>
-            <img src={star} alt="" className="w-2.5 h-2.5" />
+            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+            <div className=" mb-0.75 flex items-center">
+            <img src={star} alt="" className="2.5 h-2.5" />
+            </div>
           </div>
 
           <div className="mr-17">
@@ -885,7 +911,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-8 flex items-center ml-3 text-[10px]">
+        <div className="h-9 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -915,8 +941,10 @@ export default function drivers() {
           </div>
 
           <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-1">4.5</p>
-            <img src={star} alt="" className="w-2.5 h-2.5" />
+            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+            <div className=" mb-0.75 flex items-center">
+            <img src={star} alt="" className="2.5 h-2.5" />
+            </div>
           </div>
 
           <div className="mr-17">
