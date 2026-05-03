@@ -1,109 +1,110 @@
 import { NavLink } from "react-router-dom";
-import Logo from "../Images/Logo.png";
-import dashlogo from "../Images/Component 2.png";
-import drlogo from "../Images/mdi_steering.png"
-import users from "../Images/man.png"
-import dispatch from "../Images/dispatch.png"
-import Locay from "../Images/Locay.png"
-import dollar from "../Images/dollar.png"
-import wallet from "../Images/Wallet.png"
-import support from "../Images/support.png"
-import car from "../Images/car.png"
-import star from "../Images/shuriken.png"
-import crown from "../Images/crown.png"
-import settings from "../Images/settings.png"
+import Logo from "../Images/Logo.svg";
+import dashlogo from "../Images/Component 2.svg";
+import drlogo from "../Images/mdi_steering.svg"
+import users from "../Images/man.svg"
+import dispatch from "../Images/dispatch.svg"
+import Locay from "../Images/Locay.svg"
+import dollar from "../Images/dollar.svg"
+import wallet from "../Images/Wallet.svg"
+import support from "../Images/support.svg"
+import car from "../Images/car.svg"
+import star from "../Images/shuriken.svg"
+import crown from "../Images/crown.svg"
+import settings from "../Images/settings.svg"
 
 export default function Sidebar() {
   return (
     <div className="flex flex-col ">
-      <div className="mt-5 ml-10">
-        <img src={Logo} alt="" className="w-22.5" />
+      <div className="mt-[36.31px] ml-[43.01px]">
+        <img src={Logo} alt="" className="w-[109.98px] h-[31.36px]" />
       </div>
 
-      <nav>
-        <NavLink to="" className="flex items-center mt-10 ml-8">
+      <nav className="h-158.5 flex flex-col gap-y-3.5 ml-5.5 font-[satoshi] font-medium">
+        <NavLink to="" className="flex items-center mt-10 gap-2.75 w-38 h-10 pt-2 pr-2.5 pb-2 pl-2.5">
           <img src={dashlogo} alt="" className="w-4.5 h-5" />
-          <p className=" text-white text-[14px] ml-2 font-medium font-[satoshi]">
+          <p className=" text-white text-[16px]">
             Dashboard
           </p>
         </NavLink>
 
-        <NavLink to="/" className="flex items-center mt-5 ml-7.5 w-30 bg-[#F5C710] p-1.5 rounded font-[satoshi]">
-          <img src={drlogo} alt="" className="h-5.5" />
-          <p className="text-[14px] ml-1 font-bold">
+        <NavLink to="/" className="flex items-center w-38 h-10 bg-[#F5C710] pt-2 pr-2.5 pb-2 pl-2.5 gap-2.75 rounded-lg">
+          <img src={drlogo} alt="" className="w-5 h-5" />
+          <p className="text-[16px]">
             Drivers
           </p>
         </NavLink>
 
-        <NavLink to="" className="flex items-center mt-5 ml-8 font-[satoshi]">
-          <img src={users} alt="" className="h-5" />
-          <p className=" text-white text-[14px] ml-2 font-medium">
+        <NavLink to="/" className="flex items-center w-38 h-10 pt-2 pr-2.5 pb-2 pl-2.5 gap-2.75">
+          <img src={users} alt="" className="w-4.5 h-4.5" />
+          <p className="text-[16px] text-white">
             Users
           </p>
         </NavLink>
 
-        <NavLink to="" className="flex items-center mt-5 ml-8 font-[satoshi]">
-          <img src={dispatch} alt="" className="h-5" />
-          <p className=" text-white text-[14px] ml-2 font-medium">
+        <NavLink to="/" className="flex items-center w-38 h-10 pt-2 pr-2.5 pb-2 pl-2.5 gap-2.75">
+          <img src={dispatch} alt="" className="w-5 h-[19.9px]" />
+          <p className="text-[16px] text-white">
             Dispatch
           </p>
-        </NavLink>
+        </NavLink> 
 
-        <NavLink to="" className="flex items-center mt-5 ml-8 font-[satoshi]">
-          <img src={Locay} alt="" className="h-5" />
-          <p className=" text-white text-[14px] ml-2 font-medium">
+        <NavLink to="/" className="flex items-center w-38 h-10 pt-2 pr-2.5 pb-2 pl-2.5 gap-2.75">
+          <img src={Locay} alt="" className="w-5 h-5" />
+          <p className="text-[16px] text-white">
             Trips
           </p>
-        </NavLink>
+        </NavLink> 
 
-        <NavLink to="" className="flex items-center mt-5 ml-8 font-[satoshi]">
-          <img src={dollar} alt="" className="h-5" />
-          <p className=" text-white text-[14px] ml-2 font-medium">
+        <NavLink to="/" className="flex items-center w-38 h-10 pt-2 pr-2.5 pb-2 pl-2.5 gap-2.75 ml-0.5">
+          <img src={dollar} alt="" className="w-4 h-4" />
+          <p className="text-[16px] text-white">
             Transactions
           </p>
         </NavLink>
 
-        <NavLink to="" className="flex items-center mt-5 ml-8 font-[satoshi]">
-          <img src={wallet} alt="" className="h-5" />
-          <p className=" text-white text-[14px] ml-2 font-medium">
+        <NavLink to="/" className="flex items-center w-38 h-10 pt-2 pr-2.5 pb-2 pl-2.5 gap-2.75">
+          <img src={wallet} alt="" className="w-5 h-5" />
+          <p className="text-[16px] text-white">
             Wallet
           </p>
-        </NavLink>
+        </NavLink> 
 
-        <NavLink to="" className="flex items-center mt-5 ml-8 font-[satoshi]">
-          <img src={support} alt="" className="h-5" />
-          <p className=" text-white text-[14px] ml-2 font-medium">
+        <NavLink to="/" className="flex items-center w-38 h-10 pt-2 pr-2.5 pb-2 pl-2.5 gap-2.75">
+          <img src={support} alt="" className="w-5 h-5" />
+          <p className="text-[16px] text-white">
             Support
           </p>
-        </NavLink>
+        </NavLink> 
 
-        <NavLink to="" className="flex items-center mt-5 ml-8 font-[satoshi]">
-          <img src={car} alt="" className="h-5" />
-          <p className=" text-white text-[14px] ml-2 font-medium">
+        <NavLink to="/" className="flex items-center w-38 h-10 pt-2 pr-2.5 pb-2 pl-2.5 gap-2.75">
+          <img src={car} alt="" className="w-6 h-6" />
+          <p className="text-[16px] text-white">
             Vehicles
           </p>
-        </NavLink>
+        </NavLink> 
 
-        <NavLink to="" className="flex items-center mt-5 ml-8 font-[satoshi]">
-          <img src={star} alt="" className="h-5" />
-          <p className=" text-white text-[14px] ml-2 font-medium">
+        <NavLink to="/" className="flex items-center w-38 h-10 pt-2 pr-2.5 pb-2 pl-2.5 gap-2.75">
+          <img src={star} alt="" className="w-5 h-5" />
+          <p className="text-[16px] text-white">
             Promotions
           </p>
-        </NavLink>
+        </NavLink> 
 
-        <NavLink to="" className="flex items-center mt-5 ml-8 font-[satoshi]">
-          <img src={crown} alt="" className="h-5" />
-          <p className=" text-white text-[14px] ml-2 font-medium">
+        <NavLink to="/" className="flex items-center w-38 h-10 pt-2 pr-2.5 pb-2 pl-2.5 gap-2.75">
+          <img src={crown} alt="" className="w-5 h-5" />
+          <p className="text-[16px] text-white">
             Admins
           </p>
-        </NavLink>
+        </NavLink> 
 
-        <NavLink to="" className="flex items-center mt-5 ml-8 font-[satoshi]">
-          <img src={settings} alt="" className="h-5" />
-          <p className=" text-white text-[14px] ml-2 font-medium">
+        <NavLink to="/" className="flex items-center w-38 h-10 pt-2 pr-2.5 pb-2 pl-2.5 gap-2.75">
+          <img src={settings} alt="" className="w-4.5 h-4.5" />
+          <p className="text-[16px] text-white">
             Settings
           </p>
-        </NavLink>
+        </NavLink> 
+
       </nav>
     </div>
   );

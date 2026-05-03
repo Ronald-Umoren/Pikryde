@@ -1,14 +1,14 @@
-import dp from "../Images/dog.png";
-import logout from "../Images/logout-circle.png";
+import dp from "../Images/dog.svg";
+import logout from "../Images/logout-circle.svg";
 import Search from "../Images/Search.png";
-import dot from "../Images/Vector.png";
-import filter from "../Images/filter-lines.png";
-import sarrow from "../Images/Icon.png";
-import ellipse from "../Images/Ellipse.png";
+import dot from "../Images/Vector.svg";
+import filter from "../Images/filter.svg";
+import sarrow from "../Images/Icon.svg";
+import ellipse from "../Images/Ellipse.svg";
 import star from "../Images/Star.png";
-import point from "../Images/Dot.png";
+import point from "../Images/Dot.svg";
 import option from "../Images/if.png";
-import point2 from "../Images/point.png";
+import point2 from "../Images/point.svg";
 import breach from "../Images/chevron-down.png"
 import left from "../Images/Left-arrow.png"
 import right from "../Images/Right-arrow.png"
@@ -17,7 +17,7 @@ import right from "../Images/Right-arrow.png"
 export default function drivers() {
   return (
     <div className="w-full">
-      <div className="mt-3 ml-10 flex w-250 justify-between">
+      <div className="mt-8 ml-10 flex w-250 justify-between">
         <h1 className="text-[#3D3D3D] font-semibold text-[26px] font-[satoshi]">
           Drivers
         </h1>
@@ -117,13 +117,13 @@ export default function drivers() {
             <p className="text-[#101828] text-[15px] mb-1.5 font-medium">
               Driver Management
             </p>
-            <p className="text-[13px] text-[#667085] font-[Inter]">
+            <p className="text-[13px] text-[#667085] font-normal">
               Manage all drivers by tier and verification state
             </p>
           </div>
           <div className="flex">
             <img src={filter} alt="" className="h-5 w-5" />
-            <p className="text-[#344054] mr-10 text-[15px] ml-2">Filters</p>
+            <p className="text-[#344054] mr-10 text-[15px] ml-2 font-medium ">Filters</p>
           </div>
         </div>
 
@@ -183,7 +183,7 @@ export default function drivers() {
 
         <div className="h-8 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
-            <p className="text-[13px] font-medium">DR1023</p>
+            <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
 
           <div className="mr-10">
@@ -224,7 +224,7 @@ export default function drivers() {
           </div>
 
           <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
-            <img src={point} alt="" className="mr-2 ml-1 h-2 w-2" />
+            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
 
@@ -237,7 +237,7 @@ export default function drivers() {
 
         <div className="h-8 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
-            <p className="text-[13px] font-medium">DR1023</p>
+            <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
 
           <div className="mr-10">
@@ -278,7 +278,7 @@ export default function drivers() {
           </div>
 
           <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
-            <img src={point} alt="" className="mr-2 ml-1 h-2 w-2" />
+            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
 
@@ -291,7 +291,7 @@ export default function drivers() {
 
         <div className="h-8 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
-            <p className="text-[13px] font-medium">DR1023</p>
+            <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
 
           <div className="mr-10">
@@ -345,7 +345,7 @@ export default function drivers() {
 
         <div className="h-8 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
-            <p className="text-[13px] font-medium">DR1023</p>
+            <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
 
           <div className="mr-10">
@@ -386,7 +386,7 @@ export default function drivers() {
           </div>
 
           <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
-            <img src={point} alt="" className="mr-2 ml-1 h-2 w-2" />
+            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
 
@@ -399,7 +399,7 @@ export default function drivers() {
 
         <div className="h-8 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
-            <p className="text-[13px] font-medium">DR1023</p>
+            <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
 
           <div className="mr-10">
@@ -440,7 +440,7 @@ export default function drivers() {
           </div>
 
           <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
-            <img src={point} alt="" className="mr-2 ml-1 h-2 w-2" />
+            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
 
@@ -453,7 +453,7 @@ export default function drivers() {
 
         <div className="h-8 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
-            <p className="text-[13px] font-medium">DR1023</p>
+            <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
 
           <div className="mr-10">
@@ -494,7 +494,7 @@ export default function drivers() {
           </div>
 
           <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
-            <img src={point} alt="" className="mr-2 ml-1 h-2 w-2" />
+            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
 
@@ -507,7 +507,7 @@ export default function drivers() {
 
         <div className="h-8 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
-            <p className="text-[13px] font-medium">DR1023</p>
+            <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
 
           <div className="mr-10">
@@ -548,7 +548,7 @@ export default function drivers() {
           </div>
 
           <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
-            <img src={point} alt="" className="mr-2 ml-1 h-2 w-2" />
+            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
 
@@ -561,7 +561,7 @@ export default function drivers() {
 
         <div className="h-8 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
-            <p className="text-[13px] font-medium">DR1023</p>
+            <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
 
           <div className="mr-10">
@@ -602,7 +602,7 @@ export default function drivers() {
           </div>
 
           <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
-            <img src={point} alt="" className="mr-2 ml-1 h-2 w-2" />
+            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
 
@@ -615,7 +615,7 @@ export default function drivers() {
 
         <div className="h-8 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
-            <p className="text-[13px] font-medium">DR1023</p>
+            <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
 
           <div className="mr-10">
@@ -658,7 +658,7 @@ export default function drivers() {
           </div>
 
           <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
-            <img src={point} alt="" className="mr-2 ml-1 h-2 w-2" />
+            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
 
@@ -671,7 +671,7 @@ export default function drivers() {
 
         <div className="h-8 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
-            <p className="text-[13px] font-medium">DR1023</p>
+            <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
 
           <div className="mr-10">
@@ -712,7 +712,7 @@ export default function drivers() {
           </div>
 
           <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
-            <img src={point} alt="" className="mr-2 ml-1 h-2 w-2" />
+            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
 
@@ -725,7 +725,7 @@ export default function drivers() {
 
         <div className="h-8 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
-            <p className="text-[13px] font-medium">DR1023</p>
+            <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
 
           <div className="mr-10">
@@ -766,7 +766,7 @@ export default function drivers() {
           </div>
 
           <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
-            <img src={point} alt="" className="mr-2 ml-1 h-2 w-2" />
+            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
 
@@ -779,7 +779,7 @@ export default function drivers() {
 
         <div className="h-8 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
-            <p className="text-[13px] font-medium">DR1023</p>
+            <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
 
           <div className="mr-10">
@@ -820,7 +820,7 @@ export default function drivers() {
           </div>
 
           <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
-            <img src={point} alt="" className="mr-2 ml-1 h-2 w-2" />
+            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
 
@@ -833,7 +833,7 @@ export default function drivers() {
 
         <div className="h-8 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
-            <p className="text-[13px] font-medium">DR1023</p>
+            <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
 
           <div className="mr-10">
@@ -874,7 +874,7 @@ export default function drivers() {
           </div>
 
           <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
-            <img src={point} alt="" className="mr-2 ml-1 h-2 w-2" />
+            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
 
@@ -887,7 +887,7 @@ export default function drivers() {
 
         <div className="h-8 flex items-center ml-3 text-[10px]">
           <div className="mr-11">
-            <p className="text-[13px] font-medium">DR1023</p>
+            <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
 
           <div className="mr-10">
@@ -928,7 +928,7 @@ export default function drivers() {
           </div>
 
           <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
-            <img src={point} alt="" className="mr-2 ml-1 h-2 w-2" />
+            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
 
