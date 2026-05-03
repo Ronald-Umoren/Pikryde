@@ -75,7 +75,7 @@ export default function drivers() {
             <input
               type="text"
               placeholder="Search..."
-              className="text-[#727070] font-medium ml-3 text-[15px] font-[satoshi]"
+              className="font-medium ml-3 text-[15px] font-[satoshi] border-none outline-none focus:outline-none focus:ring-0"
             />
           </div>
           <hr className="h-4.25 w-[1.5px] bg-[#A1A1A1]" />
