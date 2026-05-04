@@ -7,7 +7,7 @@ import sarrow from "../Images/Icon.svg";
 import ellipse from "../Images/Ellipse.svg";
 import star from "../Images/Star.svg";
 import point from "../Images/Dot.svg";
-import option from "../Images/if.png";
+import option from "../Images/if.svg";
 import point2 from "../Images/point.svg";
 import breach from "../Images/chevron-down.png"
 import left from "../Images/Left-arrow.png"
@@ -131,14 +131,14 @@ export default function drivers() {
 
         <div className="bg-[#FCFCFD] text-[9px] h-9 flex items-center ml-4 text-[#667085] font-medium">
           <p className="mr-12 font-[Inter]">Driver ID</p>
-          <p className="mr-11 font-[Inter]">Image</p>
+          <p className="mr-9.5 font-[Inter]">Image</p>
 
-          <div className="flex items-center mr-14">
+          <div className="flex items-center mr-17">
             <p>Name</p>
             <img src={sarrow} alt="" className="ml-1" />
           </div>
 
-          <div className="flex items-center mr-11.5">
+          <div className="flex items-center mr-13.75">
             <p>Phone</p>
             <img src={sarrow} alt="" className="ml-1" />
           </div>
@@ -153,12 +153,12 @@ export default function drivers() {
             <img src={sarrow} alt="" className="ml-1" />
           </div>
 
-          <div className="flex items-center mr-10">
+          <div className="flex items-center mr-11">
             <p>Wallet Balance</p>
             <img src={sarrow} alt="" className="ml-1" />
           </div>
 
-          <div className="flex items-center mr-8">
+          <div className="flex items-center mr-9">
             <p>Rating</p>
             <img src={sarrow} alt="" className="ml-1" />
           </div>
@@ -173,7 +173,7 @@ export default function drivers() {
             <img src={sarrow} alt="" className="ml-1" />
           </div>
 
-          <div className="flex items-center mr-15">
+          <div className="flex items-center">
             <p>Status</p>
             <img src={sarrow} alt="" className="ml-1" />
           </div>
@@ -181,7 +181,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-9 flex items-center ml-3 text-[10px]">
+        <div className="h-8 flex items-center ml-3 text-[10.75px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -190,19 +190,19 @@ export default function drivers() {
             <img src={ellipse} alt="" className="h-7 w-7" />
           </div>
 
-          <div className="mr-2">
+          <div className="mr-3">
             <p className="text-[#163068] font-medium">Pedro Macejkovic</p>
           </div>
 
-          <div>
+          <div className="mr-0.5">
             <p className="text-[#163068] font-medium">+234 812 334 2211</p>
           </div>
 
-          <div className="mr-8">
+          <div className="mr-7.5">
             <p className="font-bold">Regular</p>
           </div>
 
-          <div className="mr-9">
+          <div className="mr-7.5">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -210,22 +210,22 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-11">
+          <div className="flex items-center mr-11.25">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
             </div>
           </div>
 
-          <div className="mr-17">
+          <div className="mr-16.75">
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-20">
+          <div className="mr-20.25">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
+          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
             <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
@@ -237,7 +237,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-9 flex items-center ml-3 text-[10px]">
+        <div className="h-8 flex items-center ml-3 text-[10.75px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -246,19 +246,19 @@ export default function drivers() {
             <img src={ellipse} alt="" className="h-7 w-7" />
           </div>
 
-          <div className="mr-4">
+          <div className="mr-5">
             <p className="text-[#163068] font-medium">Darla Schroeder</p>
           </div>
 
-          <div>
+          <div className="mr-0.5">
             <p className="text-[#163068] font-medium">+234 812 334 2211</p>
           </div>
 
-          <div className="mr-10">
+          <div className="mr-9.75">
             <p className="font-bold text-[#0775FA]">Super</p>
           </div>
 
-          <div className="mr-9">
+          <div className="mr-7.5">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -266,22 +266,22 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-         <div className="flex items-center mr-11">
+         <div className="flex items-center mr-11.25">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
             </div>
           </div>
 
-          <div className="mr-17">
+          <div className="mr-16.75">
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-20">
+          <div className="mr-20.25">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
+          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
             <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
@@ -293,7 +293,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-9 flex items-center ml-3 text-[10px]">
+        <div className="h-8 flex items-center ml-3 text-[10.75px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -302,19 +302,19 @@ export default function drivers() {
             <img src={ellipse} alt="" className="h-7 w-7" />
           </div>
 
-          <div className="mr-9">
+          <div className="mr-10.25">
             <p className="text-[#163068] font-medium">Ryan Russel</p>
           </div>
 
-          <div>
+          <div className="mr-0.5">
             <p className="text-[#163068] font-medium">+234 812 334 2211</p>
           </div>
 
-          <div className="mr-12 text-[#08A755]">
+          <div className="text-[#08A755] mr-[47.2px]">
             <p className="font-bold">Mini</p>
           </div>
 
-          <div className="mr-9">
+          <div className="mr-7.5">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -322,22 +322,22 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-11">
+          <div className="flex items-center mr-11.25">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
             </div>
           </div>
 
-          <div className="mr-17">
+          <div className="mr-16.75">
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-19.5">
+          <div className="mr-19.75">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
-          <div className="bg-[#FFF5C1] h-5 flex items-center w-16 rounded-xl mr-8">
+          <div className="bg-[#FFF5C1] h-5 flex items-center w-16 rounded-xl mr-4.5">
             <img src={point2} alt="" className="mr-2 ml-1.5 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Inactive</p>
           </div>
@@ -349,7 +349,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-9 flex items-center ml-3 text-[10px]">
+        <div className="h-8 flex items-center ml-3 text-[10.75px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -358,19 +358,19 @@ export default function drivers() {
             <img src={ellipse} alt="" className="h-7 w-7" />
           </div>
 
-          <div className="mr-6.5">
+          <div className="mr-[31.3px]">
             <p className="text-[#163068] font-medium">Lynn Kuhlman</p>
           </div>
 
-          <div>
+          <div className="mr-0.5">
             <p className="text-[#163068] font-medium">+234 812 334 2211</p>
           </div>
 
-          <div className="mr-8">
+          <div className="mr-7.5">
             <p className="font-bold">Regular</p>
           </div>
 
-          <div className="mr-9">
+          <div className="mr-7.5">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -378,22 +378,22 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-11">
+          <div className="flex items-center mr-11.25">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
             </div>
           </div>
 
-          <div className="mr-17">
+          <div className="mr-16.75">
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-20">
+          <div className="mr-20.25">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
+          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
             <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
@@ -405,7 +405,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-9 flex items-center ml-3 text-[10px]">
+        <div className="h-8 flex items-center ml-3 text-[10.75px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -414,19 +414,19 @@ export default function drivers() {
             <img src={ellipse} alt="" className="h-7 w-7" />
           </div>
 
-          <div className="mr-9">
+          <div className="mr-[41.5px]">
             <p className="text-[#163068] font-medium">Phil Steuber</p>
           </div>
 
-          <div>
+          <div className="mr-0.5">
             <p className="text-[#163068] font-medium">+234 812 334 2211</p>
           </div>
 
-          <div className="mr-12">
+          <div className="mr-[47.2px]">
             <p className="font-bold text-[#08A755]">Mini</p>
           </div>
 
-          <div className="mr-9">
+          <div className="mr-7.75">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -434,22 +434,22 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-11">
+          <div className="flex items-center mr-11.25">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
             </div>
           </div>
 
-          <div className="mr-17">
+          <div className="mr-16.75">
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-20">
+          <div className="mr-19.75">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
+          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
             <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
@@ -461,7 +461,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-9 flex items-center ml-3 text-[10px]">
+        <div className="h-8 flex items-center ml-3 text-[10.75px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -470,19 +470,19 @@ export default function drivers() {
             <img src={ellipse} alt="" className="h-7 w-7" />
           </div>
 
-          <div className="mr-3">
+          <div className="mr-[14.8px]">
             <p className="text-[#163068] font-medium">Muriel Gulgowski</p>
           </div>
 
-          <div>
+          <div className="mr-0.5">
             <p className="text-[#163068] font-medium">+234 812 334 2211</p>
           </div>
 
-          <div className="mr-10 text-[#0775FA]">
+          <div className="text-[#0775FA] mr-9.75">
             <p className="font-bold">Super</p>
           </div>
 
-          <div className="mr-9">
+          <div className="mr-7.75">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -490,22 +490,22 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-         <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+         <div className="flex items-center mr-11.25">
+            <p className="text-[#667085] font-medium mr-">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
             </div>
           </div>
 
-          <div className="mr-17">
+          <div className="mr-16.75">
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-20">
+          <div className="mr-19.75">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
+          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5.25">
             <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
@@ -517,7 +517,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-9 flex items-center ml-3 text-[10px]">
+        <div className="h-8 flex items-center ml-3 text-[10.75px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -526,19 +526,19 @@ export default function drivers() {
             <img src={ellipse} alt="" className="h-7 w-7" />
           </div>
 
-          <div className="mr-7">
+          <div className="mr-[31.1px]">
             <p className="text-[#163068] font-medium">Andrew Boyer</p>
           </div>
 
-          <div>
+          <div className="mr-0.5">
             <p className="text-[#163068] font-medium">+234 812 334 2211</p>
           </div>
 
-          <div className="mr-11.5 text-[#08A755]">
+          <div className="mr-[47.2px] text-[#08A755]">
             <p className="font-bold">Mini</p>
           </div>
 
-          <div className="mr-9">
+          <div className="mr-7.75">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -546,22 +546,22 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-11">
+          <div className="flex items-center mr-10.75">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
             </div>
           </div>
 
-          <div className="mr-17">
+          <div className="mr-16.75">
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-20">
+          <div className="mr-19.75">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
+          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
             <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
@@ -573,7 +573,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-9 flex items-center ml-3 text-[10px]">
+        <div className="h-8 flex items-center ml-3 text-[10.75px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -582,19 +582,19 @@ export default function drivers() {
             <img src={ellipse} alt="" className="h-7 w-7" />
           </div>
 
-          <div className="mr-6">
+          <div className="mr-6.75">
             <p className="text-[#163068] font-medium">Heidi Weissnat</p>
           </div>
 
-          <div>
+          <div className="mr-0.5">
             <p className="text-[#163068] font-medium">+234 812 334 2211</p>
           </div>
 
-          <div className="mr-9.5">
+          <div className="mr-9.75">
             <p className="font-bold text-[#0775FA]">Super</p>
           </div>
 
-          <div className="mr-9">
+          <div className="mr-7.75">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -602,22 +602,22 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-11">
+          <div className="flex items-center mr-10.5">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
             </div>
           </div>
 
-          <div className="mr-17">
+          <div className="mr-16.75">
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-20">
+          <div className="mr-19.75">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
+          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
             <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
@@ -629,7 +629,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-9 flex items-center ml-3 text-[10px]">
+        <div className="h-8 flex items-center ml-3 text-[10.75px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -638,21 +638,19 @@ export default function drivers() {
             <img src={ellipse} alt="" className="h-7 w-7" />
           </div>
 
-          <div className="mr-1.5">
-            <p className="text-[#163068] font-medium text-[9.5px]">
-              Gabriel Nader-Blick
-            </p>
+          <div className="mr-2">
+            <p className="text-[#163068] font-medium text-[10.25px]">Gabriel Nader-Blick</p>
           </div>
 
-          <div>
+          <div className="mr-0.5">
             <p className="text-[#163068] font-medium">+234 812 334 2211</p>
           </div>
 
-          <div className="mr-9.5">
+          <div className="mr-9.75">
             <p className="font-bold text-[#0775FA]">Super</p>
           </div>
 
-          <div className="mr-9">
+          <div className="mr-8">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -660,22 +658,22 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-11">
+          <div className="flex items-center mr-10.5">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
             </div>
           </div>
 
-          <div className="mr-17">
+          <div className="mr-16.5">
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-20">
+          <div className="mr-19.75">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
+          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
             <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
@@ -687,7 +685,119 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-9 flex items-center ml-3 text-[10px]">
+        <div className="h-8 flex items-center ml-3 text-[10.75px]">
+          <div className="mr-11">
+            <p className="text-[11.64px] font-medium">DR1023</p>
+          </div>
+
+          <div className="mr-10">
+            <img src={ellipse} alt="" className="h-7 w-7" />
+          </div>
+
+          <div className="mr-[18.2px]">
+            <p className="text-[#163068] font-medium">Madeline Kuphal</p>
+          </div>
+
+          <div className="mr-0.5">
+            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
+          </div>
+
+          <div className="mr-9.75">
+            <p className="font-bold text-[#0775FA]">Super</p>
+          </div>
+
+          <div className="mr-8">
+            <p className="text-[#667085] font-medium">Camry 2020</p>
+          </div>
+
+          <div className="mr-19">
+            <p className="text-[#667085] font-medium">₦45,000</p>
+          </div>
+
+          <div className="flex items-center mr-10.5">
+            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+            <div className=" mb-0.75 flex items-center">
+            <img src={star} alt="" className="2.5 h-2.5" />
+            </div>
+          </div>
+
+          <div className="mr-16.5">
+            <p className="text-[#667085] font-medium">840</p>
+          </div>
+
+          <div className="mr-19.75">
+            <p className="text-[#667085] font-medium">2</p>
+          </div>
+
+          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
+            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
+            <p className="text-[10px] text-[#037847] font-medium">Active</p>
+          </div>
+
+          <div>
+            <img src={option} alt="" />
+          </div>
+        </div>
+
+        <hr className="border-t border-[#EAECF0]" />
+
+        <div className="h-8 flex items-center ml-3 text-[10.75px]">
+          <div className="mr-11">
+            <p className="text-[11.64px] font-medium">DR1023</p>
+          </div>
+
+          <div className="mr-10">
+            <img src={ellipse} alt="" className="h-7 w-7" />
+          </div>
+
+          <div className="mr-[22.7px]">
+            <p className="text-[#163068] font-medium">Isaac Hartmann</p>
+          </div>
+
+          <div className="mr-0.5">
+            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
+          </div>
+
+          <div className="mr-9.75">
+            <p className="font-bold text-[#0775FA]">Super</p>
+          </div>
+
+          <div className="mr-8">
+            <p className="text-[#667085] font-medium">Camry 2020</p>
+          </div>
+
+          <div className="mr-19">
+            <p className="text-[#667085] font-medium">₦45,000</p>
+          </div>
+
+          <div className="flex items-center mr-10.5">
+            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
+            <div className=" mb-0.75 flex items-center">
+            <img src={star} alt="" className="2.5 h-2.5" />
+            </div>
+          </div>
+
+          <div className="mr-16.75">
+            <p className="text-[#667085] font-medium">840</p>
+          </div>
+
+          <div className="mr-19.75">
+            <p className="text-[#667085] font-medium">2</p>
+          </div>
+
+          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-4.75">
+            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
+            <p className="text-[10px] text-[#037847] font-medium">Active</p>
+          </div>
+
+          <div>
+            <img src={option} alt="" />
+          </div>
+        </div>
+
+        <hr className="border-t border-[#EAECF0]" />
+
+        <div className="h-8 flex items-center ml-3 text-[10.75px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -697,153 +807,41 @@ export default function drivers() {
           </div>
 
           <div className="mr-4">
-            <p className="text-[#163068] font-medium">Madeline Kuphal</p>
-          </div>
-
-          <div>
-            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
-          </div>
-
-          <div className="mr-9.5">
-            <p className="font-bold text-[#0775FA]">Super</p>
-          </div>
-
-          <div className="mr-9">
-            <p className="text-[#667085] font-medium">Camry 2020</p>
-          </div>
-
-          <div className="mr-19">
-            <p className="text-[#667085] font-medium">₦45,000</p>
-          </div>
-
-          <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
-            <div className=" mb-0.75 flex items-center">
-            <img src={star} alt="" className="2.5 h-2.5" />
-            </div>
-          </div>
-
-          <div className="mr-17">
-            <p className="text-[#667085] font-medium">840</p>
-          </div>
-
-          <div className="mr-20">
-            <p className="text-[#667085] font-medium">2</p>
-          </div>
-
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
-            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
-            <p className="text-[10px] text-[#037847] font-medium">Active</p>
-          </div>
-
-          <div>
-            <img src={option} alt="" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="h-9 flex items-center ml-3 text-[10px]">
-          <div className="mr-11">
-            <p className="text-[11.64px] font-medium">DR1023</p>
-          </div>
-
-          <div className="mr-10">
-            <img src={ellipse} alt="" className="h-7 w-7" />
-          </div>
-
-          <div className="mr-5">
-            <p className="text-[#163068] font-medium">Isaac Hartmann</p>
-          </div>
-
-          <div>
-            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
-          </div>
-
-          <div className="mr-9.5">
-            <p className="font-bold text-[#0775FA]">Super</p>
-          </div>
-
-          <div className="mr-9">
-            <p className="text-[#667085] font-medium">Camry 2020</p>
-          </div>
-
-          <div className="mr-19">
-            <p className="text-[#667085] font-medium">₦45,000</p>
-          </div>
-
-          <div className="flex items-center mr-11">
-            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
-            <div className=" mb-0.75 flex items-center">
-            <img src={star} alt="" className="2.5 h-2.5" />
-            </div>
-          </div>
-
-          <div className="mr-17">
-            <p className="text-[#667085] font-medium">840</p>
-          </div>
-
-          <div className="mr-20">
-            <p className="text-[#667085] font-medium">2</p>
-          </div>
-
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
-            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
-            <p className="text-[10px] text-[#037847] font-medium">Active</p>
-          </div>
-
-          <div>
-            <img src={option} alt="" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="h-9 flex items-center ml-3 text-[10px]">
-          <div className="mr-11">
-            <p className="text-[11.64px] font-medium">DR1023</p>
-          </div>
-
-          <div className="mr-10">
-            <img src={ellipse} alt="" className="h-7 w-7" />
-          </div>
-
-          <div className="mr-3.5">
             <p className="text-[#163068] font-medium">Angelina Wyman</p>
           </div>
 
-          <div>
+          <div className="mr-0.5">
             <p className="text-[#163068] font-medium">+234 812 334 2211</p>
           </div>
 
-          <div className="mr-9.5">
+          <div className="mr-9.75">
             <p className="font-bold text-[#0775FA]">Super</p>
           </div>
 
-          <div className="mr-9">
+          <div className="mr-7.75">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
-          <div className="mr-19">
+          <div className="mr-19.25">
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-11">
+          <div className="flex items-center mr-10.5">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
             </div>
           </div>
 
-          <div className="mr-17">
+          <div className="mr-16.75">
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-20">
+          <div className="mr-19.75">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
+          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-4.75">
             <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
@@ -855,7 +853,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-9 flex items-center ml-3 text-[10px]">
+        <div className="h-8 flex items-center ml-3 text-[10.75px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -864,19 +862,19 @@ export default function drivers() {
             <img src={ellipse} alt="" className="h-7 w-7" />
           </div>
 
-          <div className="mr-7.5">
+          <div className="mr-8.25">
             <p className="text-[#163068] font-medium">Courtney Von</p>
           </div>
 
-          <div>
+          <div className="mr-0.5">
             <p className="text-[#163068] font-medium">+234 812 334 2211</p>
           </div>
 
-          <div className="mr-9.5">
+          <div className="mr-9.75">
             <p className="font-bold text-[#0775FA]">Super</p>
           </div>
 
-          <div className="mr-9">
+          <div className="mr-7.75">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -891,11 +889,11 @@ export default function drivers() {
             </div>
           </div>
 
-          <div className="mr-17">
+          <div className="mr-16">
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-20">
+          <div className="mr-">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
@@ -911,7 +909,7 @@ export default function drivers() {
 
         <hr className="border-t border-[#EAECF0]" />
 
-        <div className="h-9 flex items-center ml-3 text-[10px]">
+        <div className="h-8 flex items-center ml-3 text-[10.75px]">
           <div className="mr-11">
             <p className="text-[11.64px] font-medium">DR1023</p>
           </div>
@@ -920,15 +918,15 @@ export default function drivers() {
             <img src={ellipse} alt="" className="h-7 w-7" />
           </div>
 
-          <div className="mr-12.5">
+          <div className="mr-13.25">
             <p className="text-[#163068] font-medium">Kayla Will</p>
           </div>
 
-          <div>
+          <div className="mr-0.5">
             <p className="text-[#163068] font-medium">+234 812 334 2211</p>
           </div>
 
-          <div className="mr-9.5">
+          <div className="mr-9.75">
             <p className="font-bold text-[#0775FA]">Super</p>
           </div>
 
@@ -936,7 +934,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
-          <div className="mr-19">
+          <div className="mr-">
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
