@@ -9,9 +9,9 @@ import star from "../Images/Star.svg";
 import point from "../Images/Dot.svg";
 import option from "../Images/if.svg";
 import point2 from "../Images/point.svg";
-import breach from "../Images/chevron-down.png"
-import left from "../Images/Left-arrow.png"
-import right from "../Images/Right-arrow.png"
+import breach from "../Images/chevron-down.svg"
+import left from "../Images/Left-arrow.svg"
+import right from "../Images/Right-arrow.svg"
 
 
 export default function drivers() {
@@ -202,7 +202,7 @@ export default function drivers() {
             <p className="font-bold">Regular</p>
           </div>
 
-          <div className="mr-7.5">
+          <div className="mr-8">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -210,7 +210,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-11.25">
+          <div className="flex items-center mr-11.5">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
@@ -258,7 +258,7 @@ export default function drivers() {
             <p className="font-bold text-[#0775FA]">Super</p>
           </div>
 
-          <div className="mr-7.5">
+          <div className="mr-8">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -266,7 +266,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-         <div className="flex items-center mr-11.25">
+         <div className="flex items-center mr-11.5">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
@@ -314,7 +314,7 @@ export default function drivers() {
             <p className="font-bold">Mini</p>
           </div>
 
-          <div className="mr-7.5">
+          <div className="mr-8">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -322,7 +322,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-11.25">
+          <div className="flex items-center mr-11.5">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
@@ -337,7 +337,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
-          <div className="bg-[#FFF5C1] h-5 flex items-center w-16 rounded-xl mr-4.5">
+          <div className="bg-[#FFF5C1] h-5 flex items-center w-16 rounded-xl mr-4.75">
             <img src={point2} alt="" className="mr-2 ml-1.5 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Inactive</p>
           </div>
@@ -370,7 +370,7 @@ export default function drivers() {
             <p className="font-bold">Regular</p>
           </div>
 
-          <div className="mr-7.5">
+          <div className="mr-8">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -378,7 +378,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-11.25">
+          <div className="flex items-center mr-11.5">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
@@ -426,7 +426,7 @@ export default function drivers() {
             <p className="font-bold text-[#08A755]">Mini</p>
           </div>
 
-          <div className="mr-7.75">
+          <div className="mr-8">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -434,7 +434,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-11.25">
+          <div className="flex items-center mr-11.5">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
@@ -445,7 +445,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-19.75">
+          <div className="mr-20.5">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
@@ -482,7 +482,7 @@ export default function drivers() {
             <p className="font-bold">Super</p>
           </div>
 
-          <div className="mr-7.75">
+          <div className="mr-8">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -490,7 +490,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-         <div className="flex items-center mr-11.25">
+         <div className="flex items-center mr-11.5">
             <p className="text-[#667085] font-medium mr-">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
@@ -501,11 +501,11 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-19.75">
+          <div className="mr-20.75">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5.25">
+          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
             <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
@@ -538,7 +538,7 @@ export default function drivers() {
             <p className="font-bold">Mini</p>
           </div>
 
-          <div className="mr-7.75">
+          <div className="mr-8">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -546,7 +546,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-10.75">
+          <div className="flex items-center mr-11.5">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
@@ -557,7 +557,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-19.75">
+          <div className="mr-20.5">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
@@ -594,7 +594,7 @@ export default function drivers() {
             <p className="font-bold text-[#0775FA]">Super</p>
           </div>
 
-          <div className="mr-7.75">
+          <div className="mr-8">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -602,7 +602,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-10.5">
+          <div className="flex items-center mr-11.5">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
@@ -613,7 +613,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-19.75">
+          <div className="mr-20.75">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
@@ -658,7 +658,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-10.5">
+          <div className="flex items-center mr-11.5">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
@@ -669,7 +669,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-19.75">
+          <div className="mr-20.75">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
@@ -714,18 +714,18 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-10.5">
+          <div className="flex items-center mr-11.5">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
             </div>
           </div>
 
-          <div className="mr-16.5">
+          <div className="mr-16.75">
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-19.75">
+          <div className="mr-20.75">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
@@ -770,7 +770,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-10.5">
+          <div className="flex items-center mr-11.5">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
@@ -781,11 +781,11 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-19.75">
+          <div className="mr-20.75">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-4.75">
+          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
             <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
@@ -818,7 +818,7 @@ export default function drivers() {
             <p className="font-bold text-[#0775FA]">Super</p>
           </div>
 
-          <div className="mr-7.75">
+          <div className="mr-8">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -826,7 +826,7 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-10.5">
+          <div className="flex items-center mr-11.5">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
@@ -837,11 +837,11 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-19.75">
+          <div className="mr-20.75">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-4.75">
+          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
             <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
@@ -874,7 +874,7 @@ export default function drivers() {
             <p className="font-bold text-[#0775FA]">Super</p>
           </div>
 
-          <div className="mr-7.75">
+          <div className="mr-8">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
@@ -882,22 +882,22 @@ export default function drivers() {
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-11">
+          <div className="flex items-center mr-11.5">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
             </div>
           </div>
 
-          <div className="mr-16">
+          <div className="mr-16.75">
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-">
+          <div className="mr-20.75">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
+          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
             <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
@@ -930,30 +930,30 @@ export default function drivers() {
             <p className="font-bold text-[#0775FA]">Super</p>
           </div>
 
-          <div className="mr-9">
+          <div className="mr-8">
             <p className="text-[#667085] font-medium">Camry 2020</p>
           </div>
 
-          <div className="mr-">
+          <div className="mr-19">
             <p className="text-[#667085] font-medium">₦45,000</p>
           </div>
 
-          <div className="flex items-center mr-11">
+          <div className="flex items-center mr-11.5">
             <p className="text-[#667085] font-medium mr-0.5">4.5</p>
             <div className=" mb-0.75 flex items-center">
             <img src={star} alt="" className="2.5 h-2.5" />
             </div>
           </div>
 
-          <div className="mr-17">
+          <div className="mr-16.75">
             <p className="text-[#667085] font-medium">840</p>
           </div>
 
-          <div className="mr-20">
+          <div className="mr-20.75">
             <p className="text-[#667085] font-medium">2</p>
           </div>
 
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-8">
+          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
             <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
             <p className="text-[10px] text-[#037847] font-medium">Active</p>
           </div>
@@ -968,23 +968,23 @@ export default function drivers() {
         <div className="mb-15 flex justify-between">
           <div className="flex items-center">
           <div className="h-20 flex items-center ml-3 mr-4">
-            <p className="text-[#727376] text-[14px] font-[Inter]">
+            <p className="text-[#727376] text-[14.25px] font-[Inter]">
               Number Of Items displayed per page
             </p>
           </div>
 
           <div className="bg-[#2664ED] w-13 flex justify-center items-center rounded-lg h-5 mr-2.5">
-            <p className="text-white text-[12px] mr-2 font-[Inter]">14</p>
+            <p className="text-white text-[12.21px] mr-2 font-[Inter]">14</p>
             <img src={breach} alt="" className="w-3 h-3" />
           </div>
 
           <div>
-            <p className="text-[#727376] text-[14px] font-[Inter]">1-14 of 12,400 items</p>
+            <p className="text-[#727376] text-[14.25px] font-[Inter]">1-14 of 12,400 items</p>
           </div>
           </div>
 
 
-          <div className="flex items-center font-[Inter] text-[14px]">
+          <div className="flex items-center font-[Inter] text-[12.15px]">
             <div>
               <img src={left} alt="" className=""/>
             </div>
