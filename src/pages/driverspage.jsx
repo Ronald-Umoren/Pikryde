@@ -111,7 +111,7 @@ export default function drivers() {
         </div>
       </div>
 
-      <div className="w-250 ml-10 mt-5 bg-white rounded font-[Inter]">
+      <div className="w-full ml-10 mt-5 bg-white rounded font-[Inter]">
         <div className="flex justify-between items-center h-20">
           <div className="ml-4">
             <p className="text-[#101828] text-[15px] mb-1.5 font-medium">
