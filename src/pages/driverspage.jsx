@@ -9,15 +9,269 @@ import star from "../Images/Star.svg";
 import point from "../Images/Dot.svg";
 import option from "../Images/if.svg";
 import point2 from "../Images/point.svg";
-import breach from "../Images/chevron-down.svg"
-import left from "../Images/Left-arrow.svg"
-import right from "../Images/Right-arrow.svg"
-
+import breach from "../Images/chevron-down.svg";
+import left from "../Images/Left-arrow.svg";
+import right from "../Images/Right-arrow.svg";
+import { useState } from "react";
 
 export default function drivers() {
+
+
+    const [activeTab, setActiveTab] = useState("All Drivers");
+
+  const columns = [
+    "Driver ID",
+    "Image",
+    "Name",
+    "Phone",
+    "Tier",
+    "Vehicle",
+    "Wallet Balance",
+    "Rating",
+    "Trips",
+    "Reports",
+    "Status",
+    "",
+  ];
+
+
+const tabs = [
+  "All Drivers",
+  "Pending Verification",
+  "Mini",
+  "Regular",
+  "Super",
+];
+
+
+  const drivers = [
+    {
+      id: "DR1023",
+      image: ellipse,
+      name: "Pedro Macejkovic",
+      phone: "+234 812 334 2211",
+      tier: "Regular",
+      vehicle: "Camry 2020",
+      wallet: "₦45,000",
+      rating: 4.5,
+      trips: 840,
+      reports: 2,
+      status: "Active",
+    },
+    {
+      id: "DR1024",
+      image: ellipse,
+      name: "Darla Schroeder",
+      phone: "+234 812 334 2211",
+      tier: "Super",
+      vehicle: "Camry 2020",
+      wallet: "₦45,000",
+      rating: 4.5,
+      trips: 840,
+      reports: 2,
+      status: "Active",
+    },
+    {
+      id: "DR1025",
+      image: ellipse,
+      name: "Ryan Russel",
+      phone: "+234 812 334 2211",
+      tier: "Mini",
+      vehicle: "Camry 2020",
+      wallet: "₦45,000",
+      rating: 4.5,
+      trips: 840,
+      reports: 2,
+      status: "Inactive",
+    },
+    {
+      id: "DR1026",
+      image: ellipse,
+      name: "Lynn Kuhlman",
+      phone: "+234 812 334 2211",
+      tier: "Regular",
+      vehicle: "Camry 2020",
+      wallet: "₦45,000",
+      rating: 4.5,
+      trips: 840,
+      reports: 2,
+      status: "Active",
+    },
+    {
+      id: "DR1027",
+      image: ellipse,
+      name: "Phil Steuber",
+      phone: "+234 812 334 2211",
+      tier: "Mini",
+      vehicle: "Camry 2020",
+      wallet: "₦45,000",
+      rating: 4.5,
+      trips: 840,
+      reports: 2,
+      status: "Active",
+    },
+    {
+      id: "DR1028",
+      image: ellipse,
+      name: "Muriel Gulgowski",
+      phone: "+234 812 334 2211",
+      tier: "Super",
+      vehicle: "Camry 2020",
+      wallet: "₦45,000",
+      rating: 4.5,
+      trips: 840,
+      reports: 2,
+      status: "Active",
+    },
+    {
+      id: "DR1029",
+      image: ellipse,
+      name: "Andrew Boyer",
+      phone: "+234 812 334 2211",
+      tier: "Mini",
+      vehicle: "Camry 2020",
+      wallet: "₦45,000",
+      rating: 4.5,
+      trips: 840,
+      reports: 2,
+      status: "Active",
+    },
+    {
+      id: "DR1030",
+      image: ellipse,
+      name: "Heidi Weissnat",
+      phone: "+234 812 334 2211",
+      tier: "Super",
+      vehicle: "Camry 2020",
+      wallet: "₦45,000",
+      rating: 4.5,
+      trips: 840,
+      reports: 2,
+      status: "Active",
+    },
+    {
+      id: "DR1031",
+      image: ellipse,
+      name: "Gabriel Nader-Blick",
+      phone: "+234 812 334 2211",
+      tier: "Super",
+      vehicle: "Camry 2020",
+      wallet: "₦45,000",
+      rating: 4.5,
+      trips: 840,
+      reports: 2,
+      status: "Active",
+    },
+    {
+      id: "DR1032",
+      image: ellipse,
+      name: "Madeline Kuphal",
+      phone: "+234 812 334 2211",
+      tier: "Super",
+      vehicle: "Camry 2020",
+      wallet: "₦45,000",
+      rating: 4.5,
+      trips: 840,
+      reports: 2,
+      status: "Active",
+    },
+    {
+      id: "DR1033",
+      image: ellipse,
+      name: "Isaac Hartmann",
+      phone: "+234 812 334 2211",
+      tier: "Super",
+      vehicle: "Camry 2020",
+      wallet: "₦45,000",
+      rating: 4.5,
+      trips: 840,
+      reports: 2,
+      status: "Active",
+    },
+    {
+      id: "DR1034",
+      image: ellipse,
+      name: "Angelina Wyman",
+      phone: "+234 812 334 2211",
+      tier: "Super",
+      vehicle: "Camry 2020",
+      wallet: "₦45,000",
+      rating: 4.5,
+      trips: 840,
+      reports: 2,
+      status: "Active",
+    },
+    {
+      id: "DR1035",
+      image: ellipse,
+      name: "Courtney Von",
+      phone: "+234 812 334 2211",
+      tier: "Super",
+      vehicle: "Camry 2020",
+      wallet: "₦45,000",
+      rating: 4.5,
+      trips: 840,
+      reports: 2,
+      status: "Active",
+    },
+    {
+      id: "DR1036",
+      image: ellipse,
+      name: "Kayla Will",
+      phone: "+234 812 334 2211",
+      tier: "Super",
+      vehicle: "Camry 2020",
+      wallet: "₦45,000",
+      rating: 4.5,
+      trips: 840,
+      reports: 2,
+      status: "Active",
+    },
+  ];
+
+  const DriverRow = ({ driver }) => (
+    <div className="grid grid-cols-12 items-center px-4 py-2 text-sm border-t border-gray-200">
+      <p>{driver.id}</p>
+
+      <img src={driver.image} className="h-7 w-7 rounded-full" />
+
+      <p className="text-[#163068] font-medium truncate">{driver.name}</p>
+
+      <p>{driver.phone}</p>
+
+      <p className="font-bold">{driver.tier}</p>
+
+      <p className="text-[#667085]">{driver.vehicle}</p>
+
+      <p className="text-[#667085]">{driver.wallet}</p>
+
+      <div className="flex items-center gap-1">
+        <span>{driver.rating}</span>
+        <img src={star} className="h-3 w-3" />
+      </div>
+
+      <p>{driver.trips}</p>
+
+      <p>{driver.reports}</p>
+
+      <div
+        className={`flex items-center gap-2 px-2 py-1 rounded-xl w-fit text-xs ${
+          driver.status === "Active"
+            ? "bg-[#ECFDF3] text-[#037847]"
+            : "bg-[#FFF5C1] text-yellow-700"
+        }`}
+      >
+        <span className="w-1.5 h-1.5 rounded-full bg-current"></span>
+        {driver.status}
+      </div>
+
+      <img src={option} />
+    </div>
+  );
+
   return (
-    <div className="w-full">
-      <div className="mt-8 ml-10 flex w-250 justify-between">
+    <div className="w-full p-2">
+      <div className="mt-8 flex justify-between">
         <h1 className="text-[#3D3D3D] font-semibold text-[26px] font-[satoshi]">
           Drivers
         </h1>
@@ -31,15 +285,15 @@ export default function drivers() {
         </div>
       </div>
 
-      <div className="mt-6 w-250 ml-10 flex gap-x-4">
-        <div className="w-50 h-19 flex flex-col justify-center items-center rounded-xl bg-white">
+      <div className="mt-6  flex gap-x-4">
+        <div className="flex-1 h-19 flex flex-col justify-center items-center rounded-xl bg-white">
           <p className="text-[13px] text-[#8181A5] font-[lato]">
             Total Drivers
           </p>
           <p className="font-semibold text-[19px] font-[lato]">2,482</p>
         </div>
 
-        <div className="w-50 h-19 flex flex-col justify-center items-center rounded-xl bg-white">
+        <div className="flex-1 h-19 flex flex-col justify-center items-center rounded-xl bg-white">
           <p className="text-[13px] text-[#E55A0F] font-[lato]">
             Pending Verifications
           </p>
@@ -48,19 +302,19 @@ export default function drivers() {
           </p>
         </div>
 
-        <div className="w-50 h-19 flex flex-col justify-center items-center rounded-xl bg-white">
+        <div className="flex-1 h-19 flex flex-col justify-center items-center rounded-xl bg-white">
           <p className="text-[13px] text-[#8181A5] font-[lato]">Mini Drivers</p>
           <p className="font-semibold text-[19px] font-[lato]">812</p>
         </div>
 
-        <div className="w-50 h-19 flex flex-col justify-center items-center rounded-xl bg-white">
+        <div className="flex-1 h-19 flex flex-col justify-center items-center rounded-xl bg-white">
           <p className="text-[13px] text-[#8181A5] font-[lato]">
             Regular Drivers
           </p>
           <p className="font-semibold text-[19px] font-[lato]">1,120</p>
         </div>
 
-        <div className="w-50 h-19 flex flex-col justify-center items-center rounded-xl bg-white">
+        <div className="flex-1 h-19 flex flex-col justify-center items-center rounded-xl bg-white">
           <p className="text-[13px] text-[#8181A5] font-[lato]">
             Super Drivers
           </p>
@@ -68,9 +322,9 @@ export default function drivers() {
         </div>
       </div>
 
-      <div className="w-250 ml-10 mt-5 flex justify-between items-center">
-        <div className="flex h-13 items-center justify-between bg-white rounded-lg w-125">
-          <div className="bg-[#F4F4F4]  h-9 flex items-center w-55 rounded-lg ml-2">
+      <div className=" mt-5 flex justify-between items-center mb-2 ">
+        <div className="flex h-13 items-center justify-between bg-white gap-2 rounded-lg w-[40%]">
+          <div className="bg-[#F4F4F4]  h-9 flex items-center flex-1 rounded-lg ml-2">
             <img src={Search} alt="" className="h-4 w-4 ml-2" />
             <input
               type="text"
@@ -88,937 +342,43 @@ export default function drivers() {
           </div>
         </div>
 
-        <div className="flex h-11.5 items-center bg-white rounded-lg w-101 justify-center">
-          <div className="h-9.5 bg-[#EDEDED] rounded-lg w-98 flex items-center justify-between">
-            <div className="bg-white h-7.5 w-18 flex justify-center items-center ml-1.5 rounded-lg">
-              <p className="text-[12px] font-medium font-[satoshi]">
-                All Drivers
-              </p>
-            </div>
-            <p className="text-[#7D7D91] text-[12px] font-medium font-[satoshi]">
-              Pending Verification
-            </p>
-            <p className="text-[#7D7D91] text-[12px] font-medium font-[satoshi]">
-              Mini
-            </p>
-            <p className="text-[#7D7D91] text-[12px] font-medium font-[satoshi]">
-              Regular
-            </p>
-            <p className="text-[#7D7D91] text-[12px] mr-2 font-medium font-[satoshi]">
-              Super
-            </p>
+        <div className="flex h-11.5 items-center bg-white rounded-lg w-[40%] justify-center px-1">
+          <div className="h-9.5 bg-[#EDEDED] rounded-lg w-full flex items-center justify-between px-1.5 gap-1">
+            {tabs.map((tab) => {
+              const isActive = activeTab === tab;
+
+              return (
+                <button
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  className={`h-7.5 px-3 flex items-center justify-center rounded-lg text-[12px] font-medium font-[satoshi] transition-all
+                ${
+                  isActive
+                    ? "bg-white text-black"
+                    : "text-[#7D7D91] hover:text-black"
+                }`}
+                >
+                  {tab}
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>
 
-      <div className="w-250 ml-10 mt-5 bg-white rounded font-[Inter]">
-        <div className="flex justify-between items-center h-20">
-          <div className="ml-4">
-            <p className="text-[#101828] text-[15px] mb-1.5 font-medium">
-              Driver Management
-            </p>
-            <p className="text-[13px] text-[#667085] font-normal">
-              Manage all drivers by tier and verification state
-            </p>
-          </div>
-          <div className="flex">
-            <img src={filter} alt="" className="h-5 w-5" />
-            <p className="text-[#344054] mr-10 text-[15px] ml-2 font-medium ">Filters</p>
-          </div>
+      <div className="overflow-scroll">
+        <div className="grid grid-cols-12 px-4 py-2 bg-[#FCFCFD] text-xs text-[#667085] font-medium">
+          {columns.map((col, i) => (
+            <div key={i} className="flex items-center gap-1">
+              {col}
+              {col && <img src={sarrow} alt="" />}
+            </div>
+          ))}
         </div>
 
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="bg-[#FCFCFD] text-[9px] h-9 flex items-center ml-4 text-[#667085] font-medium">
-          <p className="mr-12 font-[Inter]">Driver ID</p>
-          <p className="mr-9.5 font-[Inter]">Image</p>
-
-          <div className="flex items-center mr-17">
-            <p>Name</p>
-            <img src={sarrow} alt="" className="ml-1" />
-          </div>
-
-          <div className="flex items-center mr-13.75">
-            <p>Phone</p>
-            <img src={sarrow} alt="" className="ml-1" />
-          </div>
-
-          <div className="flex items-center mr-10.5">
-            <p>Tier</p>
-            <img src={sarrow} alt="" className="ml-1" />
-          </div>
-
-          <div className="flex items-center mr-12">
-            <p>Vehicle</p>
-            <img src={sarrow} alt="" className="ml-1" />
-          </div>
-
-          <div className="flex items-center mr-11">
-            <p>Wallet Balance</p>
-            <img src={sarrow} alt="" className="ml-1" />
-          </div>
-
-          <div className="flex items-center mr-9">
-            <p>Rating</p>
-            <img src={sarrow} alt="" className="ml-1" />
-          </div>
-
-          <div className="flex items-center mr-13">
-            <p>Trips</p>
-            <img src={sarrow} alt="" className="ml-1" />
-          </div>
-
-          <div className="flex items-center mr-13">
-            <p>Reports</p>
-            <img src={sarrow} alt="" className="ml-1" />
-          </div>
-
-          <div className="flex items-center">
-            <p>Status</p>
-            <img src={sarrow} alt="" className="ml-1" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="h-8 flex items-center ml-3 text-[10.75px]">
-          <div className="mr-11">
-            <p className="text-[11.64px] font-medium">DR1023</p>
-          </div>
-
-          <div className="mr-10">
-            <img src={ellipse} alt="" className="h-7 w-7" />
-          </div>
-
-          <div className="mr-3">
-            <p className="text-[#163068] font-medium">Pedro Macejkovic</p>
-          </div>
-
-          <div className="mr-0.5">
-            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
-          </div>
-
-          <div className="mr-7.5">
-            <p className="font-bold">Regular</p>
-          </div>
-
-          <div className="mr-8">
-            <p className="text-[#667085] font-medium">Camry 2020</p>
-          </div>
-
-          <div className="mr-19">
-            <p className="text-[#667085] font-medium">₦45,000</p>
-          </div>
-
-          <div className="flex items-center mr-11.5">
-            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
-            <div className=" mb-0.75 flex items-center">
-            <img src={star} alt="" className="2.5 h-2.5" />
-            </div>
-          </div>
-
-          <div className="mr-16.75">
-            <p className="text-[#667085] font-medium">840</p>
-          </div>
-
-          <div className="mr-20.25">
-            <p className="text-[#667085] font-medium">2</p>
-          </div>
-
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
-            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
-            <p className="text-[10px] text-[#037847] font-medium">Active</p>
-          </div>
-
-          <div>
-            <img src={option} alt="" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="h-8 flex items-center ml-3 text-[10.75px]">
-          <div className="mr-11">
-            <p className="text-[11.64px] font-medium">DR1023</p>
-          </div>
-
-          <div className="mr-10">
-            <img src={ellipse} alt="" className="h-7 w-7" />
-          </div>
-
-          <div className="mr-5">
-            <p className="text-[#163068] font-medium">Darla Schroeder</p>
-          </div>
-
-          <div className="mr-0.5">
-            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
-          </div>
-
-          <div className="mr-9.75">
-            <p className="font-bold text-[#0775FA]">Super</p>
-          </div>
-
-          <div className="mr-8">
-            <p className="text-[#667085] font-medium">Camry 2020</p>
-          </div>
-
-          <div className="mr-19">
-            <p className="text-[#667085] font-medium">₦45,000</p>
-          </div>
-
-         <div className="flex items-center mr-11.5">
-            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
-            <div className=" mb-0.75 flex items-center">
-            <img src={star} alt="" className="2.5 h-2.5" />
-            </div>
-          </div>
-
-          <div className="mr-16.75">
-            <p className="text-[#667085] font-medium">840</p>
-          </div>
-
-          <div className="mr-20.25">
-            <p className="text-[#667085] font-medium">2</p>
-          </div>
-
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
-            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
-            <p className="text-[10px] text-[#037847] font-medium">Active</p>
-          </div>
-
-          <div>
-            <img src={option} alt="" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="h-8 flex items-center ml-3 text-[10.75px]">
-          <div className="mr-11">
-            <p className="text-[11.64px] font-medium">DR1023</p>
-          </div>
-
-          <div className="mr-10">
-            <img src={ellipse} alt="" className="h-7 w-7" />
-          </div>
-
-          <div className="mr-10.25">
-            <p className="text-[#163068] font-medium">Ryan Russel</p>
-          </div>
-
-          <div className="mr-0.5">
-            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
-          </div>
-
-          <div className="text-[#08A755] mr-[47.2px]">
-            <p className="font-bold">Mini</p>
-          </div>
-
-          <div className="mr-8">
-            <p className="text-[#667085] font-medium">Camry 2020</p>
-          </div>
-
-          <div className="mr-19">
-            <p className="text-[#667085] font-medium">₦45,000</p>
-          </div>
-
-          <div className="flex items-center mr-11.5">
-            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
-            <div className=" mb-0.75 flex items-center">
-            <img src={star} alt="" className="2.5 h-2.5" />
-            </div>
-          </div>
-
-          <div className="mr-16.75">
-            <p className="text-[#667085] font-medium">840</p>
-          </div>
-
-          <div className="mr-19.75">
-            <p className="text-[#667085] font-medium">2</p>
-          </div>
-
-          <div className="bg-[#FFF5C1] h-5 flex items-center w-16 rounded-xl mr-4.75">
-            <img src={point2} alt="" className="mr-2 ml-1.5 h-1.5 w-1.5" />
-            <p className="text-[10px] text-[#037847] font-medium">Inactive</p>
-          </div>
-
-          <div>
-            <img src={option} alt="" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="h-8 flex items-center ml-3 text-[10.75px]">
-          <div className="mr-11">
-            <p className="text-[11.64px] font-medium">DR1023</p>
-          </div>
-
-          <div className="mr-10">
-            <img src={ellipse} alt="" className="h-7 w-7" />
-          </div>
-
-          <div className="mr-[31.3px]">
-            <p className="text-[#163068] font-medium">Lynn Kuhlman</p>
-          </div>
-
-          <div className="mr-0.5">
-            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
-          </div>
-
-          <div className="mr-7.5">
-            <p className="font-bold">Regular</p>
-          </div>
-
-          <div className="mr-8">
-            <p className="text-[#667085] font-medium">Camry 2020</p>
-          </div>
-
-          <div className="mr-19">
-            <p className="text-[#667085] font-medium">₦45,000</p>
-          </div>
-
-          <div className="flex items-center mr-11.5">
-            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
-            <div className=" mb-0.75 flex items-center">
-            <img src={star} alt="" className="2.5 h-2.5" />
-            </div>
-          </div>
-
-          <div className="mr-16.75">
-            <p className="text-[#667085] font-medium">840</p>
-          </div>
-
-          <div className="mr-20.25">
-            <p className="text-[#667085] font-medium">2</p>
-          </div>
-
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
-            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
-            <p className="text-[10px] text-[#037847] font-medium">Active</p>
-          </div>
-
-          <div>
-            <img src={option} alt="" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="h-8 flex items-center ml-3 text-[10.75px]">
-          <div className="mr-11">
-            <p className="text-[11.64px] font-medium">DR1023</p>
-          </div>
-
-          <div className="mr-10">
-            <img src={ellipse} alt="" className="h-7 w-7" />
-          </div>
-
-          <div className="mr-[41.5px]">
-            <p className="text-[#163068] font-medium">Phil Steuber</p>
-          </div>
-
-          <div className="mr-0.5">
-            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
-          </div>
-
-          <div className="mr-[47.2px]">
-            <p className="font-bold text-[#08A755]">Mini</p>
-          </div>
-
-          <div className="mr-8">
-            <p className="text-[#667085] font-medium">Camry 2020</p>
-          </div>
-
-          <div className="mr-19">
-            <p className="text-[#667085] font-medium">₦45,000</p>
-          </div>
-
-          <div className="flex items-center mr-11.5">
-            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
-            <div className=" mb-0.75 flex items-center">
-            <img src={star} alt="" className="2.5 h-2.5" />
-            </div>
-          </div>
-
-          <div className="mr-16.75">
-            <p className="text-[#667085] font-medium">840</p>
-          </div>
-
-          <div className="mr-20.5">
-            <p className="text-[#667085] font-medium">2</p>
-          </div>
-
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
-            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
-            <p className="text-[10px] text-[#037847] font-medium">Active</p>
-          </div>
-
-          <div>
-            <img src={option} alt="" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="h-8 flex items-center ml-3 text-[10.75px]">
-          <div className="mr-11">
-            <p className="text-[11.64px] font-medium">DR1023</p>
-          </div>
-
-          <div className="mr-10">
-            <img src={ellipse} alt="" className="h-7 w-7" />
-          </div>
-
-          <div className="mr-[14.8px]">
-            <p className="text-[#163068] font-medium">Muriel Gulgowski</p>
-          </div>
-
-          <div className="mr-0.5">
-            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
-          </div>
-
-          <div className="text-[#0775FA] mr-9.75">
-            <p className="font-bold">Super</p>
-          </div>
-
-          <div className="mr-8">
-            <p className="text-[#667085] font-medium">Camry 2020</p>
-          </div>
-
-          <div className="mr-19">
-            <p className="text-[#667085] font-medium">₦45,000</p>
-          </div>
-
-         <div className="flex items-center mr-11.5">
-            <p className="text-[#667085] font-medium mr-">4.5</p>
-            <div className=" mb-0.75 flex items-center">
-            <img src={star} alt="" className="2.5 h-2.5" />
-            </div>
-          </div>
-
-          <div className="mr-16.75">
-            <p className="text-[#667085] font-medium">840</p>
-          </div>
-
-          <div className="mr-20.75">
-            <p className="text-[#667085] font-medium">2</p>
-          </div>
-
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
-            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
-            <p className="text-[10px] text-[#037847] font-medium">Active</p>
-          </div>
-
-          <div>
-            <img src={option} alt="" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="h-8 flex items-center ml-3 text-[10.75px]">
-          <div className="mr-11">
-            <p className="text-[11.64px] font-medium">DR1023</p>
-          </div>
-
-          <div className="mr-10">
-            <img src={ellipse} alt="" className="h-7 w-7" />
-          </div>
-
-          <div className="mr-[31.1px]">
-            <p className="text-[#163068] font-medium">Andrew Boyer</p>
-          </div>
-
-          <div className="mr-0.5">
-            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
-          </div>
-
-          <div className="mr-[47.2px] text-[#08A755]">
-            <p className="font-bold">Mini</p>
-          </div>
-
-          <div className="mr-8">
-            <p className="text-[#667085] font-medium">Camry 2020</p>
-          </div>
-
-          <div className="mr-19">
-            <p className="text-[#667085] font-medium">₦45,000</p>
-          </div>
-
-          <div className="flex items-center mr-11.5">
-            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
-            <div className=" mb-0.75 flex items-center">
-            <img src={star} alt="" className="2.5 h-2.5" />
-            </div>
-          </div>
-
-          <div className="mr-16.75">
-            <p className="text-[#667085] font-medium">840</p>
-          </div>
-
-          <div className="mr-20.5">
-            <p className="text-[#667085] font-medium">2</p>
-          </div>
-
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
-            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
-            <p className="text-[10px] text-[#037847] font-medium">Active</p>
-          </div>
-
-          <div>
-            <img src={option} alt="" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="h-8 flex items-center ml-3 text-[10.75px]">
-          <div className="mr-11">
-            <p className="text-[11.64px] font-medium">DR1023</p>
-          </div>
-
-          <div className="mr-10">
-            <img src={ellipse} alt="" className="h-7 w-7" />
-          </div>
-
-          <div className="mr-6.75">
-            <p className="text-[#163068] font-medium">Heidi Weissnat</p>
-          </div>
-
-          <div className="mr-0.5">
-            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
-          </div>
-
-          <div className="mr-9.75">
-            <p className="font-bold text-[#0775FA]">Super</p>
-          </div>
-
-          <div className="mr-8">
-            <p className="text-[#667085] font-medium">Camry 2020</p>
-          </div>
-
-          <div className="mr-19">
-            <p className="text-[#667085] font-medium">₦45,000</p>
-          </div>
-
-          <div className="flex items-center mr-11.5">
-            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
-            <div className=" mb-0.75 flex items-center">
-            <img src={star} alt="" className="2.5 h-2.5" />
-            </div>
-          </div>
-
-          <div className="mr-16.75">
-            <p className="text-[#667085] font-medium">840</p>
-          </div>
-
-          <div className="mr-20.75">
-            <p className="text-[#667085] font-medium">2</p>
-          </div>
-
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
-            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
-            <p className="text-[10px] text-[#037847] font-medium">Active</p>
-          </div>
-
-          <div>
-            <img src={option} alt="" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="h-8 flex items-center ml-3 text-[10.75px]">
-          <div className="mr-11">
-            <p className="text-[11.64px] font-medium">DR1023</p>
-          </div>
-
-          <div className="mr-10">
-            <img src={ellipse} alt="" className="h-7 w-7" />
-          </div>
-
-          <div className="mr-2">
-            <p className="text-[#163068] font-medium text-[10.25px]">Gabriel Nader-Blick</p>
-          </div>
-
-          <div className="mr-0.5">
-            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
-          </div>
-
-          <div className="mr-9.75">
-            <p className="font-bold text-[#0775FA]">Super</p>
-          </div>
-
-          <div className="mr-8">
-            <p className="text-[#667085] font-medium">Camry 2020</p>
-          </div>
-
-          <div className="mr-19">
-            <p className="text-[#667085] font-medium">₦45,000</p>
-          </div>
-
-          <div className="flex items-center mr-11.5">
-            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
-            <div className=" mb-0.75 flex items-center">
-            <img src={star} alt="" className="2.5 h-2.5" />
-            </div>
-          </div>
-
-          <div className="mr-16.5">
-            <p className="text-[#667085] font-medium">840</p>
-          </div>
-
-          <div className="mr-20.75">
-            <p className="text-[#667085] font-medium">2</p>
-          </div>
-
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
-            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
-            <p className="text-[10px] text-[#037847] font-medium">Active</p>
-          </div>
-
-          <div>
-            <img src={option} alt="" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="h-8 flex items-center ml-3 text-[10.75px]">
-          <div className="mr-11">
-            <p className="text-[11.64px] font-medium">DR1023</p>
-          </div>
-
-          <div className="mr-10">
-            <img src={ellipse} alt="" className="h-7 w-7" />
-          </div>
-
-          <div className="mr-[18.2px]">
-            <p className="text-[#163068] font-medium">Madeline Kuphal</p>
-          </div>
-
-          <div className="mr-0.5">
-            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
-          </div>
-
-          <div className="mr-9.75">
-            <p className="font-bold text-[#0775FA]">Super</p>
-          </div>
-
-          <div className="mr-8">
-            <p className="text-[#667085] font-medium">Camry 2020</p>
-          </div>
-
-          <div className="mr-19">
-            <p className="text-[#667085] font-medium">₦45,000</p>
-          </div>
-
-          <div className="flex items-center mr-11.5">
-            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
-            <div className=" mb-0.75 flex items-center">
-            <img src={star} alt="" className="2.5 h-2.5" />
-            </div>
-          </div>
-
-          <div className="mr-16.75">
-            <p className="text-[#667085] font-medium">840</p>
-          </div>
-
-          <div className="mr-20.75">
-            <p className="text-[#667085] font-medium">2</p>
-          </div>
-
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
-            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
-            <p className="text-[10px] text-[#037847] font-medium">Active</p>
-          </div>
-
-          <div>
-            <img src={option} alt="" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="h-8 flex items-center ml-3 text-[10.75px]">
-          <div className="mr-11">
-            <p className="text-[11.64px] font-medium">DR1023</p>
-          </div>
-
-          <div className="mr-10">
-            <img src={ellipse} alt="" className="h-7 w-7" />
-          </div>
-
-          <div className="mr-[22.7px]">
-            <p className="text-[#163068] font-medium">Isaac Hartmann</p>
-          </div>
-
-          <div className="mr-0.5">
-            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
-          </div>
-
-          <div className="mr-9.75">
-            <p className="font-bold text-[#0775FA]">Super</p>
-          </div>
-
-          <div className="mr-8">
-            <p className="text-[#667085] font-medium">Camry 2020</p>
-          </div>
-
-          <div className="mr-19">
-            <p className="text-[#667085] font-medium">₦45,000</p>
-          </div>
-
-          <div className="flex items-center mr-11.5">
-            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
-            <div className=" mb-0.75 flex items-center">
-            <img src={star} alt="" className="2.5 h-2.5" />
-            </div>
-          </div>
-
-          <div className="mr-16.75">
-            <p className="text-[#667085] font-medium">840</p>
-          </div>
-
-          <div className="mr-20.75">
-            <p className="text-[#667085] font-medium">2</p>
-          </div>
-
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
-            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
-            <p className="text-[10px] text-[#037847] font-medium">Active</p>
-          </div>
-
-          <div>
-            <img src={option} alt="" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="h-8 flex items-center ml-3 text-[10.75px]">
-          <div className="mr-11">
-            <p className="text-[11.64px] font-medium">DR1023</p>
-          </div>
-
-          <div className="mr-10">
-            <img src={ellipse} alt="" className="h-7 w-7" />
-          </div>
-
-          <div className="mr-4">
-            <p className="text-[#163068] font-medium">Angelina Wyman</p>
-          </div>
-
-          <div className="mr-0.5">
-            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
-          </div>
-
-          <div className="mr-9.75">
-            <p className="font-bold text-[#0775FA]">Super</p>
-          </div>
-
-          <div className="mr-8">
-            <p className="text-[#667085] font-medium">Camry 2020</p>
-          </div>
-
-          <div className="mr-19.25">
-            <p className="text-[#667085] font-medium">₦45,000</p>
-          </div>
-
-          <div className="flex items-center mr-11.5">
-            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
-            <div className=" mb-0.75 flex items-center">
-            <img src={star} alt="" className="2.5 h-2.5" />
-            </div>
-          </div>
-
-          <div className="mr-16.75">
-            <p className="text-[#667085] font-medium">840</p>
-          </div>
-
-          <div className="mr-20.75">
-            <p className="text-[#667085] font-medium">2</p>
-          </div>
-
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
-            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
-            <p className="text-[10px] text-[#037847] font-medium">Active</p>
-          </div>
-
-          <div>
-            <img src={option} alt="" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="h-8 flex items-center ml-3 text-[10.75px]">
-          <div className="mr-11">
-            <p className="text-[11.64px] font-medium">DR1023</p>
-          </div>
-
-          <div className="mr-10">
-            <img src={ellipse} alt="" className="h-7 w-7" />
-          </div>
-
-          <div className="mr-8.25">
-            <p className="text-[#163068] font-medium">Courtney Von</p>
-          </div>
-
-          <div className="mr-0.5">
-            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
-          </div>
-
-          <div className="mr-9.75">
-            <p className="font-bold text-[#0775FA]">Super</p>
-          </div>
-
-          <div className="mr-8">
-            <p className="text-[#667085] font-medium">Camry 2020</p>
-          </div>
-
-          <div className="mr-19">
-            <p className="text-[#667085] font-medium">₦45,000</p>
-          </div>
-
-          <div className="flex items-center mr-11.5">
-            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
-            <div className=" mb-0.75 flex items-center">
-            <img src={star} alt="" className="2.5 h-2.5" />
-            </div>
-          </div>
-
-          <div className="mr-16.75">
-            <p className="text-[#667085] font-medium">840</p>
-          </div>
-
-          <div className="mr-20.75">
-            <p className="text-[#667085] font-medium">2</p>
-          </div>
-
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
-            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
-            <p className="text-[10px] text-[#037847] font-medium">Active</p>
-          </div>
-
-          <div>
-            <img src={option} alt="" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="h-8 flex items-center ml-3 text-[10.75px]">
-          <div className="mr-11">
-            <p className="text-[11.64px] font-medium">DR1023</p>
-          </div>
-
-          <div className="mr-10">
-            <img src={ellipse} alt="" className="h-7 w-7" />
-          </div>
-
-          <div className="mr-13.25">
-            <p className="text-[#163068] font-medium">Kayla Will</p>
-          </div>
-
-          <div className="mr-0.5">
-            <p className="text-[#163068] font-medium">+234 812 334 2211</p>
-          </div>
-
-          <div className="mr-9.75">
-            <p className="font-bold text-[#0775FA]">Super</p>
-          </div>
-
-          <div className="mr-8">
-            <p className="text-[#667085] font-medium">Camry 2020</p>
-          </div>
-
-          <div className="mr-19">
-            <p className="text-[#667085] font-medium">₦45,000</p>
-          </div>
-
-          <div className="flex items-center mr-11.5">
-            <p className="text-[#667085] font-medium mr-0.5">4.5</p>
-            <div className=" mb-0.75 flex items-center">
-            <img src={star} alt="" className="2.5 h-2.5" />
-            </div>
-          </div>
-
-          <div className="mr-16.75">
-            <p className="text-[#667085] font-medium">840</p>
-          </div>
-
-          <div className="mr-20.75">
-            <p className="text-[#667085] font-medium">2</p>
-          </div>
-
-          <div className="bg-[#ECFDF3] h-5 flex items-center w-15 rounded-xl mr-5">
-            <img src={point} alt="" className="mr-2 ml-1 h-1.5 w-1.5" />
-            <p className="text-[10px] text-[#037847] font-medium">Active</p>
-          </div>
-
-          <div>
-            <img src={option} alt="" />
-          </div>
-        </div>
-
-        <hr className="border-t border-[#EAECF0]" />
-
-        <div className="mb-15 flex justify-between">
-          <div className="flex items-center">
-          <div className="h-20 flex items-center ml-3 mr-4">
-            <p className="text-[#727376] text-[14.25px] font-[Inter]">
-              Number Of Items displayed per page
-            </p>
-          </div>
-
-          <div className="bg-[#2664ED] w-13 flex justify-center items-center rounded-lg h-5 mr-2.5">
-            <p className="text-white text-[12.21px] mr-2 font-[Inter]">14</p>
-            <img src={breach} alt="" className="w-3 h-3" />
-          </div>
-
-          <div>
-            <p className="text-[#727376] text-[14.25px] font-[Inter]">1-14 of 12,400 items</p>
-          </div>
-          </div>
-
-
-          <div className="flex items-center font-[Inter] text-[12.15px]">
-            <div>
-              <img src={left} alt="" className=""/>
-            </div>
-            <div className="h-5 w-4 bg-[#2664ED] ml-4 flex items-center justify-center">
-              <p className="text-white font-bold">1</p>
-            </div>
-
-            <div className="ml-4 text-[#666666]">
-              <p>2</p>
-            </div>
-
-            <div className="ml-4 text-[#666666]">
-              <p>3</p>
-            </div>
-
-            <div className="ml-4 text-[#666666]">
-              <p>4</p>
-            </div>
-
-            <div className="ml-4 text-[#666666]">
-              <p>...</p>
-            </div>
-
-            <div className="ml-4 text-[#666666]">
-              <p>25</p>
-            </div>
-
-            <div className="ml-4 mr-7">
-              <img src={right} alt="" />
-            </div>
-          </div>
-        </div>
-
-        <div></div>
+        {drivers.map((driver) => (
+          <DriverRow key={driver.id} driver={driver} />
+        ))}
       </div>
     </div>
   );
