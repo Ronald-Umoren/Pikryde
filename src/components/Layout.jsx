@@ -9,7 +9,7 @@ export default function Layout(){
             <div className="w-[17%] bg-[#010101] overflow-y-auto no-scrollbar">
                 <Sidebar />
             </div>
-            <div className="flex flex-1  h-full mr-3 overflow-auto no-scrollbar">
+            <div className="flex flex-1 mr-3 overflow-auto no-scrollbar h-screen">
                 <Outlet />
             </div>
         </div>
