@@ -265,12 +265,16 @@ export default function Drivers() {
         {driver.status}
       </div>
 
+<<<<<<< HEAD
       <img src={option} className="ml-10" />
+=======
+      <img src={option} className="ml-8" />
+>>>>>>> 6c61eda83a368bb738d3450f3b370b6e1fd776f1
     </div>
   );
 
   return (
-    <div className="w-full p-2">
+    <div className="w-full p-2 h-full flex flex-col">
       <div>
         <div className="mt-8 flex justify-between">
           <h1 className="text-[#3D3D3D] font-semibold text-[26px] font-[satoshi]">
@@ -366,7 +370,7 @@ export default function Drivers() {
         </div>
       </div>
 
-      <div className="bg-white">
+      <div className="bg-white overflow-auto flex-1 no-scrollbar flex flex-col">
         <div className="flex items-center justify-between font-[Inter]">
           <div className="p-5 py-3">
             <p className="text-[14.95px] font-medium mb-2">Driver Management</p>
@@ -388,12 +392,11 @@ export default function Drivers() {
             </div>
           ))}
         </div>
-        <div className="overflow-y-auto max-h-[500px] no-scrollbar">
-          <div>
-            {drivers.map((driver) => (
-              <DriverRow key={driver.id} driver={driver} />
-            ))}
-          </div>
+
+        <div className="flex-1 overflow-auto no-scrollbar">
+          {drivers.map((driver) => (
+            <DriverRow key={driver.id} driver={driver} />
+          ))}
         </div>
       </div>
     </div>
