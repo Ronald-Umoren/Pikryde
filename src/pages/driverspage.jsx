@@ -255,9 +255,7 @@ export default function Drivers() {
           driver.status === "Active"
             ? "bg-[#ECFDF3] text-[#037847]"
             : "bg-[#FFF5C1] text-[#3F5436]"
-        } ${
-          driver.status === "Active" ? "px-2 py-1" : "px-1 py-1"
-        }`}
+        } ${driver.status === "Active" ? "px-2 py-1" : "px-1 py-1"}`}
       >
         <span
           className={`w-1.5 h-1.5 rounded-full ${
@@ -267,12 +265,12 @@ export default function Drivers() {
         {driver.status}
       </div>
 
-      <img src={option} className="ml-8"/>
+      <img src={option} className="ml-8" />
     </div>
   );
 
   return (
-    <div className="w-full p-2">
+    <div className="w-full p-2 h-full flex flex-col">
       <div>
         <div className="mt-8 flex justify-between">
           <h1 className="text-[#3D3D3D] font-semibold text-[26px] font-[satoshi]">
@@ -368,7 +366,7 @@ export default function Drivers() {
         </div>
       </div>
 
-      <div className="bg-white overflow-auto max-h-125 no-scrollbar">
+      <div className="bg-white overflow-auto flex-1 no-scrollbar flex flex-col">
         <div className="flex items-center justify-between font-[Inter]">
           <div className="p-5 py-3">
             <p className="text-[14.95px] font-medium mb-2">Driver Management</p>
@@ -390,10 +388,11 @@ export default function Drivers() {
             </div>
           ))}
         </div>
-        <div>
-        {drivers.map((driver) => (
-          <DriverRow key={driver.id} driver={driver} />
-        ))}
+
+        <div className="flex-1 overflow-auto no-scrollbar">
+          {drivers.map((driver) => (
+            <DriverRow key={driver.id} driver={driver} />
+          ))}
         </div>
       </div>
     </div>
