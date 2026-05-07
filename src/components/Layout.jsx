@@ -5,11 +5,11 @@ import { Outlet } from "react-router-dom";
 
 export default function Layout(){
     return(
-        <div className="flex gap-4 h-screen">
-            <div className="w-49 bg-[#010101]">
+        <div className="flex gap-4 h-screen bg-gray-100">
+            <div className="w-[17%] bg-[#010101] overflow-y-auto no-scrollbar">
                 <Sidebar />
             </div>
-            <div className="flex flex-1 bg-gray-100 h-full mr-3 overflow-y-auto">
+            <div className="flex flex-1  h-full mr-3 overflow-auto no-scrollbar">
                 <Outlet />
             </div>
         </div>
