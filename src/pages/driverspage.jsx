@@ -24,6 +24,7 @@ export default function Drivers() {
   ];
 
   const [activeTab, setActiveTab] = useState("All Drivers");
+  const [activePage, setActivePage] = useState(1)
 
   const columns = [
     "Driver ID",
@@ -38,6 +39,15 @@ export default function Drivers() {
     "Reports",
     "Status",
     "",
+  ];
+  
+  const pages = [
+    1,
+    2,
+    3,
+    4,
+    "...",
+    25,
   ];
 
   const drivers = [
@@ -226,7 +236,7 @@ export default function Drivers() {
   ];
 
   const DriverRow = ({ driver }) => (
-    <div className="grid grid-cols-[1fr_0.8fr_1.5fr_1.5fr_0.8fr_1.2fr_1.5fr_0.9fr_0.9fr_1fr_0.8fr_0.8fr] items-center text-sm border-t border-gray-200 font-[Inter] text-[11.63px] p-5 py-1.5">
+    <div className="grid grid-cols-[1fr_0.8fr_1.5fr_1.5fr_1fr_1.2fr_1.5fr_0.9fr_0.9fr_1fr_0.8fr_0.8fr] items-center text-sm border-t border-gray-200 font-[Inter] text-[11.63px] p-5 py-1.5">
       <p className="font-medium text-[11.64px]">{driver.id}</p>
 
       <img src={driver.image} className="h-7 w-7 rounded-full" />
@@ -235,7 +245,17 @@ export default function Drivers() {
 
       <p>{driver.phone}</p>
 
-      <p className="font-bold">{driver.tier}</p>
+      <p
+        className={`font-bold ${
+          driver.tier === "Mini"
+            ? "text-[#08A755]"
+            : driver.tier === "Super"
+              ? "text-[#0775FA]"
+              : "text-black"
+        }`}
+      >
+        {driver.tier}
+      </p>
 
       <p className="text-[#667085]">{driver.vehicle}</p>
 
@@ -265,11 +285,7 @@ export default function Drivers() {
         {driver.status}
       </div>
 
-<<<<<<< HEAD
-      <img src={option} className="ml-10" />
-=======
       <img src={option} className="ml-8" />
->>>>>>> 6c61eda83a368bb738d3450f3b370b6e1fd776f1
     </div>
   );
 
@@ -384,7 +400,7 @@ export default function Drivers() {
           </div>
         </div>
 
-        <div className="grid grid-cols-[1fr_0.8fr_1.5fr_1.5fr_0.8fr_1.2fr_1.5fr_0.9fr_0.9fr_1fr_0.8fr_0.8fr] text-xs text-[#667085] font-medium bg-gray-50 p-5 py-3">
+        <div className="grid grid-cols-[1fr_0.8fr_1.5fr_1.5fr_1fr_1.2fr_1.5fr_0.9fr_0.9fr_1fr_0.8fr_0.8fr] text-xs text-[#667085] font-medium bg-gray-50 p-5 py-3">
           {columns.map((col, i) => (
             <div key={i} className="flex items-center gap-1 text-[9.98px]">
               {col}
@@ -397,6 +413,42 @@ export default function Drivers() {
           {drivers.map((driver) => (
             <DriverRow key={driver.id} driver={driver} />
           ))}
+          <div className="flex items-center justify-between">
+            <div className="p-5 py-3 flex font-[Inter] w-132.5 justify-between">
+              <p className="text-[14.25px] font-normal text-[#727376]">
+                Number Of Items displayed per page
+              </p>
+
+              <div className="bg-blue-700 flex text-white items-center justify-between px-3 rounded-lg">
+                <p className="mr-2.5 text-[12.21px]">14</p>
+                <img src={breach} alt="" className="w-3 h-3" />
+              </div>
+
+              <p className="text-[#666666] text-[14.25px]">
+                1-14 of 12,400 items
+              </p>
+            </div>
+
+            <div className="flex items-center w-[15%] justify-between mr-10">
+              <img src={left} alt="" className="w-3 h-3"/>
+
+              {[pages.map((page) =>{
+                 const isActive = activePage === page;
+
+                 return(
+                  <button
+                  key={page}
+                  onClick={() => setActivePage(page)}
+                  className={`h-5 w-4 px-1 flex items-center justify-center text-[12px] font-medium transition-all
+                  ${isActive ? "bg-[#2664ED] text-white font-bold" : "text-[#666666]"}`}>
+                    {page}
+                  </button>
+                 )
+              })]}
+
+              <img src={right} alt="" className="w-3 h-3" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
