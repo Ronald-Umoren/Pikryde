@@ -273,9 +273,9 @@ export default function Drivers() {
       <div
         className={`flex items-center gap-2 rounded-xl w-fit text-xs ${
           driver.status === "Active"
-            ? "bg-[#ECFDF3] text-[#037847]"
-            : "bg-[#FFF5C1] text-[#3F5436]"
-        } ${driver.status === "Active" ? "px-2 py-1" : "px-1 py-1"}`}
+            ? "bg-[#ECFDF3] text-[#037847] px-2 py-1"
+            : "bg-[#FFF5C1] text-[#3F5436] px-1 py-1"
+        }`}
       >
         <span
           className={`w-1.5 h-1.5 rounded-full ${
@@ -347,7 +347,7 @@ export default function Drivers() {
 
         <div className="mt-5 flex justify-between items-center mb-4">
           <div className="flex h-13 items-center justify-between bg-white gap-2 rounded-lg w-[50%]">
-            <div className="bg-[#F4F4F4]  h-9 flex items-center flex-1 rounded-lg ml-2">
+            <div className="bg-[#F4F4F4]  h-9 flex items-center w-[45%] rounded-lg ml-2">
               <img src={Search} alt="" className="h-4 w-4 ml-2" />
               <input
                 type="text"
@@ -394,8 +394,8 @@ export default function Drivers() {
               Manage all drivers by tier and verification state.
             </p>
           </div>
-          <div className="mr-5 flex justify-between w-[6.5%] text-[14px] font-medium">
-            <img src={filter} alt="" />
+          <div className="mr-5 flex w-[6.5%] text-[14px] font-medium items-center">
+            <img src={filter} alt="" className="mr-2"/>
             <p>Filters</p>
           </div>
         </div>
