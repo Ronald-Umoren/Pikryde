@@ -236,7 +236,7 @@ export default function Drivers() {
   ];
 
   const DriverRow = ({ driver }) => (
-    <div className="grid grid-cols-[1fr_0.8fr_1.5fr_1.5fr_1fr_1.2fr_1.5fr_0.9fr_0.9fr_1fr_0.8fr_0.8fr] items-center text-sm border-t border-gray-200 font-[Inter] text-[11.63px] p-5 py-1.5">
+    <div className="grid grid-cols-[1fr_0.8fr_1.5fr_105px_1fr_1.2fr_1.5fr_0.9fr_0.9fr_1fr_0.8fr_0.8fr] items-center text-sm border-t border-gray-200 font-[Inter] text-[11.63px] p-5 py-1.5">
       <p className="font-medium text-[11.64px]">{driver.id}</p>
 
       <img src={driver.image} className="h-7 w-7 rounded-full" />
@@ -400,7 +400,7 @@ export default function Drivers() {
           </div>
         </div>
 
-        <div className="grid grid-cols-[1fr_0.8fr_1.5fr_1.5fr_1fr_1.2fr_1.5fr_0.9fr_0.9fr_1fr_0.8fr_0.8fr] text-xs text-[#667085] font-medium bg-gray-50 p-5 py-3">
+        <div className="grid grid-cols-[1fr_0.8fr_1.5fr_105px_1fr_1.2fr_1.5fr_0.9fr_0.9fr_1fr_0.8fr_0.8fr] text-xs text-[#667085] font-medium bg-gray-50 p-5 py-3">
           {columns.map((col, i) => (
             <div key={i} className="flex items-center gap-1 text-[9.98px]">
               {col}
